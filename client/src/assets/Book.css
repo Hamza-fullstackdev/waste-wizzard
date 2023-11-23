@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: #fd70bc;
+  --blue: #6b66c3;
+  --cyan: #4cc8e8;
+  --purple: #b897ff;
+  --magenta: #bb42b9;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =============================================
+=======================Booking Page section============
+=================================================== */
+.bookingpagesection{
+  background-color: var(--blue);
+  padding: 3rem 0;
+}
+.bookingpagecontainer{
+  width: 95%;
+  margin-top: 8rem;
+}
+.bookingpagecontainer h2{
+  font-size: 2.2rem;
+  color: var(--cyan);
+  text-transform: capitalize;
+}
+.bookingpageboxcontainer{
+  margin-top: 3rem;
+}
+.bookingpagebox{
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+.bookingbox{
+  width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+.bookingboxheader img{
+  width: 150px;
+}
+.bookingboxbody{
+  margin-top: 2rem;
+  text-align: center;
+}
+.bookingboxbody h2{
+  color: var(--blue);
+}
+.bookingboxbody p{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.bookingboxbutton{
+  margin-top: 2rem;
+}
+.bookingboxbutton button{
+  padding: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--pink);
+  font-size: 1.6rem;
+  border-radius: 50px;
+  color: white;
+}
+.bookingboxbody h3{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+.bookingaboutcontent{
+  margin-top: 1rem;
+}
+.bookingboxbody .bookingaboutcontent p{
+  font-weight: 500;
+  color: black;
+}
+
+
+/* =============================================
+=======================Booking Page Details section============
+=================================================== */
+.bookingdetailscontainer{
+  margin-top: 3rem;
+  align-items: normal;
+}
+.leftbookingdetailssection{
+  width: 500px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  align-items: normal;
+}
+.leftbookingdetailcontentcontainer{
+  align-items: normal;
+}
+.leftbookingdetailscontent{
+  width: 50%;
+}
+.leftbookingdetailscontent h2{
+  color: var(--pink);
+  font-size: 2rem;
+}
+.leftbookingdetailscontent p{
+  margin-top: .5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.leftbookingdetailscontent h3{
+  font-size: 3rem;
+  margin-top: .5rem;
+}
+.leftbookingdetailscontent span{
+  font-size: 1.2rem;
+}
+.leftbookingdetailscontent h4{
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.4rem;
+  width: fit-content;
+  border-radius: 50px;
+}
+.rightbookingdetailscontent{
+  width: 50%;
+}
+.rightbookingdetailscontent img{
+  width: 100%;
+}
+.Rightbookingdetailssection{
+  width: 500px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.rightbookingdetailscontent{
+  margin-top: 1rem;
+}
+.bookingdateslot{
+  cursor: pointer;
+  background-color: var(--purple);
+  border-radius: 8px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.bookingdateslot h2{
+  color: black;
+  font-size: 1.4rem;
+}
+.bookingdateslot p{
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.bookingdateslot select{
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.leftbookingdetailscontent .leftbookingdate{
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.leftbookingdate input{
+  background-color: var(--blue);
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+.collectingheading{
+  margin-top: 3rem;
+}
+.collectingdetailssection{
+  align-items: normal;
+}
+.leftcollectingdetailscontent label{
+  color: white;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.leftcollectingdetailscontent input{
+  padding: 1rem;
+  margin-top: .3rem;
+  width: 200px;
+  border-radius: 2px;
+}
+.leftcollectingdetailscontent input::placeholder{
+  text-transform: capitalize;
+}
+.collectingdetailssection{
+  padding: 1rem 0;
+}
+.leftcollectingdetailssection{
+  width: 45%;
+}
+.collectingformname{
+  margin-top: 2rem;
+}
+.postalcodeinput{
+  margin-top: 2rem;
+}
+.descriptioninput{
+  margin-top: 2rem;
+}
+.descriptioninput textarea{
+  width: 100%;
+  border-radius: 2px;
+  padding: 1rem;
+}
+.rightcollectingdetailssection{
+  width: 45%;
+  padding: 2rem;
+  background-color: white;
+  position: relative;
+}
+.rightcollectingdetailssection h2{
+  font-size: 2.1rem;
+  color: black;
+  font-weight: 600;
+}
+.rightcollectingdetailssection p{
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: black;
+  font-weight: 600;
+}
+.rightcollectingdetailssection p i{
+  margin-right: 1rem;
+}
+.extrasfooter{
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.extrasfooter h2{
+  color: white;
+  padding: 2rem;
+}
+.addtocartbutton{
+  text-align: end;
+  margin-top: 2rem;
+}
+.addtocartbutton button{
+  padding: 2rem 3rem;
+  cursor: pointer;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 50px;
+}
+
+
+/* =============================================
+=======================Media queries for (Booking Page)============
+=================================================== */
+@media screen and (max-width:1154px){
+  .bookingdetailscontainer{
+    display: block;
+  }
+  .leftbookingdetailssection{
+    width: 60%;
+  }
+  .Rightbookingdetailssection{
+    width: 60%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+  .collectingdetailssection{
+    display: block;
+  }
+  .addtocartbutton{
+    text-align: start;
+  }
+  .rightcollectingdetailssection{
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .leftcollectingdetailssection{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:847px){
+  .bookingpagecontainer{
+    margin: 2rem;
+  }
+  .leftbookingdetailssection{
+    width: 90%;
+  }
+  .Rightbookingdetailssection{
+    width: 90%;
+  }
+  .leftcollectingdetailssection{
+    width: 90%;
+  }
+  .rightcollectingdetailssection{
+    width: 90%;
+  }
+}
+@media screen and (max-width:519px){
+  .bookingpagecontainer{
+    margin: 2rem;
+  }
+  .collectingformname{
+    display: block;
+  }
+  .rightcollectingformname{
+    margin-top: 1rem;
+  }
+  .leftbookingdetailssection{
+    display: block;
+  }
+  .leftbookingdetailscontent{
+    width: 100%;
+  }
+  .rightbookingdetailscontent{
+    width: 100%;
+  }
+  .leftbookingdetailcontentcontainer{
+    display: block;
+  }
+  .leftbookingdate{
+    width: 100%;
+  }
+}

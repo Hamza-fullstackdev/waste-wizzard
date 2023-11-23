@@ -1,0 +1,1247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: #fd70bc;
+  --blue: #6b66c3;
+  --cyan: #4cc8e8;
+  --purple: #b897ff;
+  --magenta: #bb42b9;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ====================================
+============Home Page hero section=================
+====================================== */
+.herosection {
+  width: 100%;
+  height: 120vh;
+  background-color: blueviolet;
+}
+.header {
+  background-color: rgb(13, 13, 80);
+}
+.headercontainer {
+  width: 90%;
+  padding: 1.5rem 0;
+}
+.headercontainer .logo a{
+  color: white;
+}
+.headercontainer .logo h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+.navbar-links .navbar-link {
+  color: white;
+  font-size: 1.7rem;
+  padding-left: 3rem;
+  font-weight: 500;
+}
+.navbar-link a {
+  color: white;
+}
+.navbar-link button {
+  background-color: var(--pink);
+  color: white;
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.hamberger-menu i {
+  display: none;
+  font-size: 3rem;
+  color: var(--pink);
+}
+.herocontent {
+  margin: 7rem 2rem;
+  display: flex;
+  align-items: normal;
+}
+.leftherosection {
+  width: 50%;
+}
+.rightherosection {
+  width: 50%;
+}
+.leftherosection h2 {
+  font-size: 2.6rem;
+  color: white;
+  font-weight: 500;
+}
+.leftherosection h1 {
+  font-size: 5.5rem;
+  color: var(--cyan);
+}
+.leftherosection p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: white;
+}
+.leftherooffer {
+  margin-top: 2rem;
+}
+.leftherooffer p {
+  font-size: 2.3rem;
+}
+.leftherooffer h2 {
+  font-weight: 700;
+}
+.leftherooffer button {
+  background-color: var(--pink);
+  padding: 2rem 4rem;
+  border-radius: 50px;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.rightherocontent {
+  text-align: end;
+  margin-right: 4rem;
+}
+.rightherocontent img {
+  width: 250px;
+}
+.rightherocontent p {
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.rightherocontent p:nth-child(3) {
+  opacity: 0.5;
+}
+.heroimg {
+  margin-top: 3rem;
+  width: 60%;
+  position: absolute;
+  right: 0;
+}
+
+/* =============================================
+=======================Home Page About section============
+=================================================== */
+.aboutsection {
+  margin-top: 18rem;
+}
+.aboutcontainer {
+  width: 95%;
+}
+.aboutdata {
+  text-align: center;
+}
+.aboutdata p {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.aboutdata h2 {
+  font-size: 3rem;
+  color: var(--blue);
+}
+.aboutbuttons {
+  background-color: var(--blue);
+  text-align: center;
+  width: 90%;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+.aboutcontent {
+  width: 50%;
+}
+.aboutbuttons a {
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: underline;
+}
+.aboutbuttons a:nth-child(1) {
+  color: var(--pink);
+}
+.aboutbuttons a:nth-child(2) {
+  padding-left: 3rem;
+}
+
+
+/* =============================================
+=======================Home Page Product section============
+=================================================== */
+
+.productcontainer {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1rem;
+}
+.productcard {
+  width: 400px;
+  height: 322px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+.productcard span {
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  position: absolute;
+  text-transform: uppercase;
+}
+.productimg {
+  text-align: end;
+  width: 100%;
+  height: fit-content;
+}
+.productimg img {
+  height: 230px;
+}
+.productdesc {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.productdesc h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+}
+.productdesc p {
+  font-size: 2.8rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+
+/* =============================================
+=======================Home Page Service section============
+=================================================== */
+.servicessection {
+  margin-top: 3rem;
+}
+.servicescontainer {
+  width: 95%;
+  background-color: var(--pink);
+  color: white;
+  padding: 2.5rem;
+}
+.servicebox h2 {
+  font-size: 2rem;
+}
+
+
+/* =============================================
+=======================Home Page Envoiremnt section============
+=================================================== */
+
+.envoirmentsection {
+  margin-top: 6rem;
+}
+.envoirmentcontainer {
+  width: 95%;
+}
+.leftenvoirmentsection {
+  width: 65%;
+}
+.leftenvoirmentsection img {
+  width: 100%;
+}
+.rightenvoirmentsection {
+  width: 30%;
+}
+.rightenvoirmentsection p:nth-child(1) {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.rightenvoirmentsection h2 {
+  font-size: 3rem;
+  color: var(--blue);
+  font-weight: 600;
+}
+.rightenvoirmentsection h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.rightenvoirmentsection p {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.rightenvoirmentsection button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--pink);
+  color: white;
+  padding: 2rem 3rem;
+  margin-top: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+/* =============================================
+=======================Home Page Panel section============
+=================================================== */
+.panelsection {
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.panelcontainer {
+  width: 70%;
+  padding: 2rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+}
+.panelbox {
+  width: 300px;
+}
+.panelbox img {
+  width: fit-content;
+}
+.panelbox h2 {
+  color: var(--magenta);
+  font-size: 3rem;
+}
+.panelbox p {
+  font-size: 1.6rem;
+}
+
+
+/* =============================================
+=======================Home Page About Company section============
+=================================================== */
+
+.aboutcompanysection {
+  margin-top: 8rem;
+  background-color: #432375;
+}
+.aboutcompanysection .sideimg {
+  width: 600px;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+}
+.aboutcompanycontainer {
+  width: 100%;
+  margin-top: 2rem;
+}
+.aboutcompanycontent {
+  width: 70%;
+  text-align: center;
+}
+.aboutcompanycontent p:nth-child(1) {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.aboutcompanycontent h2 {
+  font-size: 3.6rem;
+  color: var(--cyan);
+}
+.aboutcompanycontent h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+.aboutcompanycontent p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+.aboutcompanyratingsection {
+  margin-top: 8rem;
+}
+.aboutcompanyratingcontainer {
+  width: 95%;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+}
+.aboutcontainerbox {
+  background-color: white;
+  padding: 2rem 2rem 5rem 3rem;
+  border-radius: 10px;
+  align-items: normal;
+  width: 45%;
+  height: 300px;
+}
+.leftaboutcompanyratingcontainer {
+  width: fit-content;
+}
+.leftaboutcompanyratingcontainer h2 {
+  color: var(--blue);
+  font-size: 2.5rem;
+}
+.leftaboutcompanyratingcontainer h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.leftaboutcompanyratingcontainer p {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.rightaboutcompanyratingcontainer {
+  width: 30%;
+}
+.rightaboutcompanyratingcontainer img {
+  width: 130px;
+}
+
+
+/* =============================================
+=======================Home Page Waste calculator section============
+=================================================== */
+.wastecalculatorsection {
+  margin-top: 6rem;
+}
+.wastecalculatorcontainer {
+  width: 95%;
+  flex-wrap: wrap;
+  align-items: normal;
+}
+.leftwastecontainer {
+  width: 45%;
+}
+.leftwastecontainer h2 {
+  color: var(--cyan);
+  font-size: 3rem;
+}
+.leftwastecontainer h3 {
+  color: white;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.leftwastecontainer h1 {
+  font-size: 5.5rem;
+  margin-top: 2rem;
+  color: var(--cyan);
+}
+.leftwastecontainer button {
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  background-color: var(--pink);
+  color: white;
+  font-weight: 600;
+  margin-top: 5rem;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.leftaboutcompanyratingcontainer button {
+  padding: 2rem 4rem;
+  background-color: var(--pink);
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.6rem;
+}
+.calculatorheight {
+  height: 230px;
+  padding: 2rem;
+}
+.rightwastecontainer {
+  width: 45%;
+  padding: 2rem 2rem 5rem 3rem;
+  border-radius: 10px;
+  align-items: normal;
+}
+.wastecalculator {
+  background-color: white;
+  border-radius: 10px;
+}
+.tradeaccount {
+  border-radius: 10px;
+  margin-top: 3rem;
+  background-color: var(--purple);
+}
+
+
+/* =============================================
+=======================Home Page Review section============
+=================================================== */
+.reviewssection {
+  margin-top: 5rem;
+}
+.reviewscontainer {
+  width: 95%;
+}
+.leftreviewscontainer p {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.leftreviewscontainer h2 {
+  color: var(--blue);
+  font-size: 2.5rem;
+  width: 250px;
+}
+.rightreviewcontainer p {
+  color: black;
+}
+.review {
+  margin-top: 5rem;
+  width: 95%;
+  padding: 2rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+}
+.reviewbox {
+  position: relative;
+  width: 260px;
+  padding: 2rem;
+  height: 500px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.reviewbox img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+
+.reviewheader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  color: white;
+  font-size: 3rem;
+}
+.reviewbody {
+  margin-top: 3rem;
+}
+.reviewbody h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.reviewfooter {
+  position: absolute;
+  bottom: 5%;
+}
+.reviewfooter h3 {
+  color: var(--blue);
+  font-size: 2rem;
+}
+.reviewfooter p {
+  font-size: 1.6rem;
+}
+
+.leftaboutcompanyratingcontainer {
+  order: 1;
+}
+.rightaboutcompanyratingcontainer {
+  order: 2;
+}
+
+
+/* =============================================
+=======================Home Page Blog section============
+=================================================== */
+.blogsection{
+  margin-top: 5rem;
+  position: relative;
+  background-color: var(--magenta);
+}
+.blogsection img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  z-index: 0;
+}
+.blogcontainer{
+  width: 95%;
+  height: 300px;
+  flex-wrap: wrap;
+}
+.leftblogcontainer{
+  z-index: 999;
+}
+.leftblogcontainer p{
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.leftblogcontainer h2{
+  color: var(--cyan);
+  font-size: 2.5rem;
+}
+.rightblogcontainer{
+  z-index: 999;
+}
+.rightblogcontainer button{
+  background-color: var(--pink);
+  color: white;
+  padding: 2rem 3rem;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.blogdata{
+  width: 95%;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.leftblogdata {
+  width: 30%;
+}
+.leftblogdata img{
+  width: 100%;
+}
+.rightblogdata{
+  width: 65%;
+  overflow: unset;
+  padding: 2rem;
+}
+.rightblogdata p{
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+}
+.rightblogdata h2{
+  color: var(--blue);
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  text-transform: none;
+}
+.rightblogdata .lowercase{
+  text-transform: none;
+  margin-top: 1rem;
+  color: black;
+}
+.rightblogdata span{
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--blue);
+  margin-top: 1rem;
+  color: var(--blue);
+}
+
+/* =============================================
+=======================Home Page Cntact section============
+=================================================== */
+.contactsection{
+  margin: 4rem 0;
+}
+.contactcontainer{
+  width: 95%;
+  background-color: var(--cyan);
+  height: 160px;
+  border-radius: 10px;
+}
+.leftcontactsection{
+  padding: 3rem;
+}
+.leftcontactsection h2{
+  color: var(--blue);
+  font-size: 2.5rem;
+}
+.leftcontactsection p{
+  margin-top: .5rem;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.rightcontactsection{
+  padding: 3rem;
+}
+.rightcontactsection a{
+  color: white;
+}
+.rightcontactsection button{
+  padding: 2rem 3rem;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+/* =============================================
+=======================Home Page Footer section============
+=================================================== */
+.footercontainer{
+  width: 95%;
+  align-items: normal;
+  margin-top: 2rem;
+}
+.leftfootersection p{
+  font-size: 2rem;
+}
+.leftfootersection h2{
+  font-size: 2rem;
+}
+.footersocialicons{
+  width: 240px;
+}
+.sociallinks{
+  background-color: orange;
+  border-radius: 50px;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.sociallinks a{
+  color: black;
+}
+.sociallinks i{
+  font-size: 20px;
+}
+.rightfootersection{
+  column-gap: 5rem;
+  align-items: normal;
+}
+.footerlinks p{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.links{
+  margin-top: .7rem;
+  text-align: start;
+  line-height: 25px;
+}
+.links a{
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.links a:hover{
+ text-decoration: underline;
+}
+.endfootercontainer{
+  width: 95%;
+}
+.endfootercontainer h2{
+  font-size: 2.5rem;
+  margin: 3rem 0 2rem 0;
+}
+.endfootercontainer p{
+  font-size: 1.4rem;
+  margin-top: .3rem;
+}
+
+
+
+/* =============================================
+=======================Signup Page section============
+=================================================== */
+.signupsection{
+  height: 100vh;
+}
+.signupbox{
+  width: 420px;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+.signupbox img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.signupheader{
+  text-align: center;
+  margin-top: 3rem;
+}
+.signupheader h2{
+  font-size: 2.6rem;
+  color: var(--pink);
+  font-weight: 600;
+}
+.signupheader p{
+  font-size: 1.7rem;
+  color: white;
+  margin-top: .3rem;
+}
+.signupbody{
+  padding: 2rem 2rem 0 2rem;
+}
+.signupbody input::placeholder{
+  text-transform: uppercase;
+}
+.signupbody label{
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.6rem;
+}
+.signupbody input{
+  border-radius: 2px;
+  margin-top: .5rem;
+  padding: 1rem;
+  width: 220px;
+  margin-bottom: .7rem;
+}
+.signupfooter{
+  padding: 2rem;
+}
+.signupfooter button{
+  width: 100%;
+  padding: 1.3rem 1rem;
+  background-color: var(--purple);
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 5px;
+}
+.signupfooter small{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: white;
+}
+.signupfooter a{
+  color: var(--cyan);
+}
+#googlebtn{
+  margin-top: .7rem;
+  background-color: rgb(109, 22, 22);
+  margin-bottom: .5rem;
+}
+
+
+/* =============================================
+=======================Profile Page section============
+=================================================== */
+.profilecontainer{
+  margin-top: 4rem;
+  width: 500px;
+}
+.profilebox{
+  background-color: var(--blue);
+}
+.profileheader{
+  text-align: center;
+  margin-top: 2rem;
+}
+.profileheader h2{
+  font-size: 2.6rem;
+  color: var(--pink);
+}
+.profileheader p{
+  font-size: 1.8rem;
+  color: white;
+}
+.profilebody{
+  margin-top: 1rem;
+}
+.profileimg{
+  text-align: center;
+  margin-top: 1rem;
+}
+.profileimg img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profilecontent{
+  padding: 2rem;
+}
+.profilecontent label{
+  font-size: 1.6rem;
+  color: white;
+}
+.profilecontent input{
+  padding: 1rem;
+  margin: .5rem 0;
+  width: 300px;
+  border-radius: 2px;
+}
+.profilecontent input::placeholder{
+  text-transform: uppercase;
+}
+.profilefooter{
+  padding: 2rem;
+}
+.profilefooter button{
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--cyan);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.profilefooter button:nth-child(2){
+  background-color: var(--magenta);
+  margin-top: 1rem;
+}
+
+
+
+
+
+/* =============================================
+=======================Media Queries for responsiveness (Home,signup,login,profile)============
+=================================================== */
+@media screen and (max-width: 1380px) {
+  .rightherosection .heroimg {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1161px) {
+  .rightherosection .heroimg {
+    width: 500px;
+  }
+  .aboutcompanyratingcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutcontainerbox {
+    width: 70%;
+  }
+  .leftwastecontainer h1 {
+    font-size: 4rem;
+  }
+  .calculatorheight {
+    height: fit-content;
+  }
+  .wastecalculator {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .calculatorwidth {
+    text-align: center;
+    width: 100%;
+  }
+  .tradeaccount {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .panelcontainer {
+    width: 95%;
+  }
+  .aboutcontent {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .hamberger-menu i{
+    display: block;
+  }
+  header{
+    position: relative;
+}
+.navbar{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: var(--blue);
+    transition: all 0.3s ease-in;
+}
+.navbar .navbar-links{
+    margin-top: 3rem;
+    display: block;
+    padding: 2rem 2rem;
+}
+.navbar .navbar-links .navbar-link{
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+.navbar .navbar-links #closebtn{
+    font-size: 4rem;
+    color: var(--pink);
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    cursor: pointer;
+}
+.icon{
+    position: relative;
+    font-size: 2rem;
+}
+.hamberger-menue {
+    display: block;
+    cursor: pointer;
+}
+#closebtn{
+    display: block;
+}
+}
+@media screen and (max-width: 895px) {
+  .aboutcompanycontent {
+    width: 80%;
+  }
+  .aboutcompanysection .sideimg {
+    width: 400px;
+  }
+  .wastecalculatorcontainer {
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .leftwastecontainer {
+    width: 95%;
+  }
+  .rightwastecontainer {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .envoirmentcontainer {
+    flex-wrap: wrap;
+  }
+  .leftenvoirmentsection {
+    text-align: center;
+    width: 95%;
+  }
+  .rightenvoirmentsection {
+    text-align: center;
+    width: 95%;
+  }
+  .footercontainer{
+    flex-wrap: wrap;
+  }
+  .rightfootersection{
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .footerlinks{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .servicecontent {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .productcontainer {
+    text-align: center;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .productcard span {
+    left: 0;
+  }
+  .aboutcontent {
+    width: 95%;
+  }
+  .aboutbuttons {
+    width: 90%;
+  }
+  .herocontent {
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 95%;
+    text-align: center;
+  }
+  .leftherosection {
+    text-align: center;
+    width: 100%;
+  }
+  .rightherosection {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .rightherocontent {
+    text-align: start;
+  }
+  .herosection {
+    height: fit-content;
+  }
+  .rightherosection .heroimg {
+    top: 80%;
+  }
+}
+@media screen and (max-width: 751px) {
+  .leftblogdata{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 751px) {
+  html {
+    font-size: 60%;
+  }
+  .aboutcontainerbox {
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  .leftaboutcompanyratingcontainer {
+    order: 2;
+  }
+  .rightaboutcompanyratingcontainer {
+    order: 1;
+    width: 100%;
+  }
+  .aboutcontainerbox{
+    width: 100%;
+  }
+  .rightherosection .heroimg {
+    top: 85%;
+    width: 350px;
+  }
+  .rightherocontent img {
+    width: 200px;
+  }
+  .leftherosection h1 {
+    font-size: 4.5rem;
+  }
+  .contactcontainer{
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 640px) {
+  .reviewscontainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .leftreviewscontainer {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin-top: 2rem;
+  }
+  .leftreviewscontainer h2 {
+    width: 100%;
+  }
+  .rightreviewcontainer {
+    width: 100%;
+    text-align: center;
+  }
+  .leftwastecontainer h1 {
+    font-size: 3rem;
+  }
+  .rightaboutcompanyratingcontainer {
+    width: 100%;
+    text-align: center;
+  }
+  .panelsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .panelbox {
+    width: 95%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .aboutcontent {
+    width: 95%;
+  }
+  .aboutbuttons {
+    width: 90%;
+  }
+  .rightherocontent {
+    width: 100%;
+    text-align: center;
+  }
+  .rightherosection .heroimg {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 58%;
+  }
+  .leftwastecontainer h1 {
+    font-size: 3rem;
+  }
+  .aboutcontainerbox {
+    height: fit-content;
+    display: block;
+    width: 100%;
+  }
+  .aboutcompanysection .sideimg {
+    width: 300px;
+  }
+  .aboutcompanycontent {
+    width: 90%;
+  }
+  .panelbox {
+    width: 100%;
+  }
+  .aboutsection{
+    margin-top: 4rem;
+  }
+  .aboutdata {
+    width: 95%;
+  }
+  .productcard span {
+    padding: 0.5rem 1rem;
+    top: 2%;
+    left: 2%;
+  }
+  .aboutdata{
+    width: 100%;
+  }
+  .aboutbuttons{
+    width: 85%;
+  }
+  .leftherosection {
+    width: 98%;
+  }
+  .rightherocontent{
+    margin-top: 2rem;
+  }
+  .rightherosection .heroimg {
+    display: none;
+  }
+  .blogsection img{
+    width: 500px;
+  }
+  .rightblogdata{
+    width: 100%;
+  }
+  .rightenvoirmentsection{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .leftwastecontainer{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .leftherosection h1{
+    font-size: 4.8rem;
+  }
+  .rightreviewcontainer{
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .leftherosection h1{
+    font-size: 4rem;
+  }
+  .aboutdata{
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: #fd70bc;
+  --blue: #6b66c3;
+  --cyan: #4cc8e8;
+  --purple: #b897ff;
+  --magenta: #bb42b9;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =============================================
+=======================Contact Page section============
+=================================================== */
+.contactpagesection{
+    margin-top: 5rem;
+}
+.contactpagecontainer{
+    width: 95%;
+    align-items: normal;
+    flex-wrap: wrap;
+}
+.leftcontactpagesection{
+    width: 45%;
+}
+.leftcontactpagesection p{
+    font-size: 1.6rem;
+}
+.leftcontactpagecontent{
+    margin-top: 3rem;
+}
+.leftcontactpagecontent h2{
+    font-size: 2.5rem;
+}
+.leftcontactpagecontent h1{
+    font-size: 5rem;
+    color: var(--blue);
+    font-weight: 900;
+}
+.leftcontactpagecontent h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.leftcontactpagecontent p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.leftcontactpagecontent button{
+    padding: 1.5rem 5rem;
+    cursor: pointer;
+    background-color: var(--pink);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    margin-top: 3rem;
+}
+.rightcontactpagesection{ 
+    margin-top: 5rem;
+    width: 50%;
+    padding: 2rem;
+}
+.contactformbox{
+    width: 400px;
+    background-color: var(--blue);
+    padding: 3rem;
+    border-radius: 10px;
+}
+.contactformheader h2{
+    text-align: center;
+    color: var(--cyan);
+    font-size: 2.7rem;
+}
+.contactformbody{
+    margin-top: 2rem;
+}
+.contactformbody label{
+    font-size: 1.6rem;
+    color: white;
+}
+.contactformbody input{
+    padding: 1rem;
+    border-radius: 2px;
+    width: 300px;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.contactformbody input::placeholder{
+    text-transform: capitalize;
+}
+.contactformbody select{
+    width: 300px;
+    padding: 1rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+.contactformbody textarea{
+    width: 300px;
+    margin-top: .5rem;
+    padding: 1rem;
+    border-radius: 2px;
+}
+.contactformfooter button{
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    color: white;
+    background-color: var(--pink);
+    margin-top: 2rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+}
+
+
+/* =============================================
+=======================Contact Page Contact us section============
+=================================================== */
+.contactussection{
+    background-color: #432375;
+    margin-top: 5rem;
+}
+.contactuscontainer{
+    width: 95%;
+    text-align: center;
+}
+.contactuscontainer p{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.contactuscontainer h2{
+    color: var(--cyan);
+    font-size: 3rem;
+}
+.contactuscontent{
+    padding: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+.contactusbox{
+    background-color: white;
+    width: 340px;
+    height: 600px;
+    padding: 3rem;
+    border-radius: 5px;
+}
+.contactusheader h2{
+    font-size: 3rem;
+    color: var(--blue);
+}
+.contactusheader img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.contactusbody{
+    margin-top: 1.5rem;
+}
+.contactusbody h3{
+    font-size: 1.8rem;
+    text-align: start;
+}
+.contactusbody p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: start;
+    color: black;
+    text-transform: none;
+}
+.contactusaddress{
+    margin-top: 3rem;
+}
+.contactusaddress h2{
+    color: var(--blue);
+    text-align: start;
+    font-size: 2.5rem;
+}
+.contactusaddress p{
+    margin: .5rem;
+}
+.rightcontactusaddress img{
+    width: 120px;
+}
+.aboutbg{
+    background-color: #432375;
+    margin: 0;
+    color: white;
+}
+
+
+
+
+/* =============================================
+=======================Product Page or Rubbish page============
+=================================================== */
+
+.productpagesection{
+    margin-top: 5rem;
+}
+.productpagecontainer{
+    width: 95%;
+}
+.productpagecontainer p{
+    font-size: 2rem;
+}
+.productpagecontent{
+    margin-top: 3rem;
+}
+.leftproductpagesection{
+    width: 48%;
+}
+.leftproductpagesection h3{
+    font-size: 2.2rem;
+}
+.leftproductpagesection h1{
+    font-size: 4rem;
+    margin-top: .5rem;
+    color: var(--blue);
+}
+.leftproductpagesection h4{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+.leftproductpagesection p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.leftproductpagesection .productpagepricetag p{
+    font-weight: 600;
+}
+.leftproductpagesection .productpagepricetag h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+.leftproductpagesection .productpagebutton{
+    margin-top: 2rem;
+}
+.productpagebutton button{
+    padding: 1.5rem 3rem;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.rightproductpagesection{
+    width: 50%;
+    text-align: center;
+}
+.rightproductpagesection img{
+    width: 100%;
+}
+
+
+/* =============================================
+=======================Product Page Details section============
+=================================================== */
+.productpagedetailsection{
+    background-color: var(--blue);
+    width: 100%;
+}
+.productpagedetailcontainer{
+    width: 95%;
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+.productpagedetailcontainerheader{
+    text-align: center;
+}
+
+.productpagedetailcontainerheader h2{
+    color: var(--cyan);
+    font-size: 2.5rem;
+}
+.productpagedetailcontainerheader h3{
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.productpagedetailcontainerheader p:last-child{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+}
+.productpagedetailcontainerbody{
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.productpagedetailbox{
+    width: 140px;
+    background-color: white;
+    padding: 4rem 1.5rem;
+    border-radius: 8px;
+    height: 380px;
+    text-align: center;
+    position: relative;
+}
+.productpagedetailboxheader img{
+    width: 100px;
+}
+.productpagedetailboxbody {
+    margin-top: 2rem;
+}
+.productpagedetailboxbody h2{
+    font-size: 2rem;
+    color: var(--blue);
+}
+.productpagedetailboxbody h3{
+    font-size: 1.6rem;
+}
+.productpagedetailboxbody p{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+.productpagedetailboxfooter{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+.productpagedetailboxfooter button{
+    padding: 1.5rem 3rem;
+    background-color: var(--pink);
+    border-radius: 50px;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.skipbagsection{
+    background-color: var(--blue);
+    width: 100%;
+}
+.skipbagcontainer{
+    width: 95%;
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+.skipbagcontainerheader{
+    text-align: center;
+}
+.skipbagcontainerheader p{
+    font-size: 2.5rem;
+    color: white;
+}
+.skipbagcontainerheader h2{
+    color: var(--cyan);
+    font-size: 2.5rem;
+}
+.skipbagcontainerheader h3{
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.skipbagcontainerheader p{
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+}
+.skipbagcontainerbody{
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.skipbagbox{
+    width: 380px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.skipbagboxheader{
+    text-align: center;
+    margin-top: 2rem;
+}
+.skipbagboxheader img{
+    width: 100px;
+}
+.skipbagboxbody{
+    margin-top: 2rem;
+    text-align: center;
+    height: 200px;
+    padding: 0 2rem;
+}
+.skipbagboxbody h2{
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+.skipbagboxbody p{
+    font-size: 1.6rem;
+    margin-top: .5rem;
+}
+.skipbagboxbody h3{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--pink);
+}
+.skipbagboxfooter{
+    background-color: black;
+    text-align: center;
+}
+.skipbagboxfooter h3{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.skipbagboxfooter p{
+    color: white;
+    font-size: 1.6rem;
+}
+.skipbagboxactions{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+.skipbagboxactions input{
+    width: 30px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.decrementbutton{
+    padding: 10px 18px;
+    text-align: center;
+    background-color: rgb(180, 24, 24);
+    border-radius: 50%;
+    margin: 1rem;
+    cursor: pointer;
+}
+.decrementbutton h2{
+    font-size: 2rem;
+    color: white;
+}
+.skipbagboxfooter button{
+    padding: 1.3rem 3rem;
+    background-color: var(--pink);
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* =============================================
+=======================Media queries for Product page============
+=================================================== */
+@media screen and (max-width:950px){
+    .contactpagecontainer{
+        display: none;
+    }
+    .leftcontactpagesection p{
+        text-align: start;
+    }
+    .leftcontactpagesection{
+        width: 100%;
+        text-align: center;
+    }
+    .leftcontactpagecontent p{
+        text-align: center;
+    }
+    .rightcontactpagesection{
+        width: 100%;
+    }
+}
+@media screen and (max-width:862px){
+    .contactuscontent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .contactpagesection{
+        width: 100%;
+    }
+    .leftcontactpagesection{
+        padding: 0;
+    }
+    .rightcontactpagesection{
+        width: 100%;
+        padding: 0;
+    }
+    .contactformbox{
+        width: 320px;
+    }
+    .contactformbox input{
+        width: 200px;
+    }
+    .contactformbox select{
+        width: 220px;
+    }
+    .contactformbox textarea{
+        width: 200px;
+    }
+}
+@media screen and (max-width:446px){
+    .contactuscontent{
+        padding: 0;
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width:370px){
+    html{
+        font-size: 58%;
+    }
+    .contactusbox{
+        width: 300px;
+    }
+    .contactusheader img{
+        width: 70px;
+        height: 70px;
+    }
+}
