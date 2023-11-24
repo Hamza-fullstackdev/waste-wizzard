@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URI).then(()=>{
 
 app.use(cors({
     credentials:true,
-    origin:"https://waste-wizzard-frontend-4d0gfghcn-hamza-fullstackdevs-projects.vercel.app"
+    origin:"https://waste-wizzard-frontend.vercel.app"
 }));
 app.use(express.json())
 app.use(cookieParser())
