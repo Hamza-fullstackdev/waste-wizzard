@@ -10,7 +10,7 @@ import authRoute from "./routes/auth.route.js";
 import userRoute from './routes/user.route.js';
 import contactRoute from './routes/contact.route.js';
 import productRoute from './routes/product.route.js';
-import cartRoute from './routes/cart.route.js';
+// import cartRoute from './routes/cart.route.js';
 
 const app=express();
 const PORT= process.env.PORT||8000;
@@ -32,7 +32,7 @@ app.use("/api/route",authRoute);
 app.use("/api/user",userRoute);
 app.use('/api/contact',contactRoute);
 app.use('/api/product',productRoute);
-app.use('/api/cart',cartRoute);
+// app.use('/api/cart',cartRoute);
 
 // const __dirname=path.resolve();
 // app.use(express.static(path.join(__dirname, '/client/dist')))
