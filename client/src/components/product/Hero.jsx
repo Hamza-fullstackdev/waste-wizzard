@@ -6,7 +6,7 @@ const Hero = (props) => {
     <section className="productpagesection center">
         <div className="productpagecontainer">
             <p><Link style={{color:'black'}} to={'/'}>Home</Link> / {props.link}</p>
-            <div className="productpagecontent flex">
+            <div className="productpagecontent">
                 <div className="leftproductpagesection">
                     <h3>{props.subTitle}</h3>
                     <h1>{props.title}</h1>

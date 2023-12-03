@@ -60,7 +60,8 @@ const Hero = () => {
               <label htmlFor="phone">Phone Number:</label><br />
               <input type="tel" required id='phone' placeholder='Phone number' onChange={handleFormData} /><br />
               <label htmlFor="service">Services:</label><br />
-              <select id="service" onChange={handleFormData} required>
+              <select id="service" onChange={handleFormData} required defaultValue={'Choose service'}>
+                <option value="">Choose service</option>
                 <option value="Man & Van">Man & Van</option>
                 <option value="Skip Bag">Skip Bag</option>
                 <option value="Domestic Bins">Domestic Bins</option>

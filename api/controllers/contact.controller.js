@@ -23,3 +23,16 @@ export const addContact = async (req, res, next) => {
         next(error)
     }
 }
+
+export const getContact=async(req,res,next)=>{
+    try {
+        const getData= await Contact.find({service:req.params.service});
+        if(getData){
+            res.json(getData)
+        }else{
+            next("No Contact messages")
+        }
+    } catch (error) {
+        next(error)
+    }
+}

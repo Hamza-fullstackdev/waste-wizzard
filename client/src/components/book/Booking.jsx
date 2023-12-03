@@ -16,7 +16,7 @@ const Booking = () => {
                             <h2>Man & Van</h2>
                             <p>From $89.99 inc. Vat</p>
                             <div className="bookingboxbutton center">
-                                <button><Link style={{color:'white'}} to={'/rubbish-clearance'}>Book now</Link></button>
+                                <button><Link style={{color:'white'}} to={'/book/rubbish-clearance'}>Book now</Link></button>
                             </div>
                             <h3>Suitable for:</h3>
                             <div className="bookingaboutcontent">
@@ -34,7 +34,7 @@ const Booking = () => {
                             <h2>Skip Bags</h2>
                             <p>From $13.99 inc. Vat</p>
                             <div className="bookingboxbutton center">
-                                <button><Link style={{color:'white'}} to={'/skip-bags'}>Book now</Link></button>
+                                <button><Link style={{color:'white'}} to={'/book/skip-bags'}>Book now</Link></button>
                             </div>
                             <h3>Suitable for:</h3>
                             <div className="bookingaboutcontent">
@@ -52,7 +52,7 @@ const Booking = () => {
                             <h2>Furniture Removal</h2>
                             <p>From $89.99 inc.Vat</p>
                             <div className="bookingboxbutton center">
-                                <button>Book now</button>
+                                <button><Link style={{color:'white'}} to={'/book/sofa-removal'}>Book now</Link></button>
                             </div>
                             <h3>Suitable for:</h3>
                             <div className="bookingaboutcontent">

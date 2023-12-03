@@ -229,6 +229,8 @@ html {
 }
 .productpagecontent{
     margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
 }
 .leftproductpagesection{
     width: 48%;
@@ -272,7 +274,7 @@ html {
     text-align: center;
 }
 .rightproductpagesection img{
-    width: 100%;
+    max-width: 80%;
 }
 
 
@@ -312,6 +314,7 @@ html {
     flex-wrap: wrap;
 }
 .productpagedetailbox{
+    margin-top: 2rem;
     width: 140px;
     background-color: white;
     padding: 4rem 1.5rem;
@@ -467,6 +470,179 @@ html {
     border-radius: 50px;
     cursor: pointer;
 }
+
+
+
+.sofaremovalsection{
+    margin-top: 3rem;
+    background-color: var(--blue);
+}
+.sofaremovalcontainer{
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+}
+.sofaremovalcontainerheader h2{
+    font-size: 2.5rem;
+    color: var(--cyan);
+}
+.sofaremovalcontainerbody{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+}
+.sofaremovalcontainerbox{
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+}
+.sofaremovalcontainerboxheader img{
+    width: 100px;
+    margin-top: 1rem;
+}
+.sofaremovalcontainerboxbody{
+    text-align: center;
+    margin-top: 1rem;
+}
+.sofaremovalcontainerboxbody h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+.sofaremovalcontainerboxbody p{
+    font-size: 1.5rem;
+}
+.sofaremovalcontainerboxactions{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.sofaremovalcontainerbuttons{
+    width: 40%;
+}
+.sofaremovalcontainerbuttons button{
+    padding: 1rem 1.8rem;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.sofaremovalcontainerbuttons span{
+    font-size: 1.6rem;
+}
+.sofaremovalbooknowbtn button{
+    padding: 1.4rem 3rem;
+    background-color: var(--pink);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.sofaremovalbooknowbtn{
+    margin-bottom: 3rem;
+}
+
+
+.checkoutpagecontainer{
+    width: 80%;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+.checkoutpagecontainer h2{
+    color: var(--blue);
+    font-size: 2.6rem;
+}
+.checkoutpagecontent{
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+.checkoutpagebox{
+    align-items: normal;
+}
+.checkoutpagecontentcontainer{
+    max-width: 700px;
+    padding: 1rem;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+    margin: 1rem 0;
+}
+.leftcheckoutpagebox{
+    width: 30%;
+}
+.leftcheckoutpagebox img{
+    width: 200px;
+    height: fit-content;
+}
+.rightcheckoutpagebox{
+    padding: 1rem;
+    width: 65%;
+}
+.rightcheckoutpageboxcontent h2{
+    font-size: 2rem;
+    text-align: start;
+}
+.rightcheckoutpageboxcontent address{
+    font-size: 1.4rem;
+}
+.rightcheckoutpageboxcontent h3{
+    margin-top: .3rem;
+    font-size: 1.8rem;
+    color: var(--pink);
+}
+.rightcheckoutpageboxcontent p{
+    font-size: 1.4rem;
+    margin-top: .3rem;
+}
+.rightcheckoutpageextrassection{
+    text-align: start;
+    max-width: 60%;
+}
+.rightcheckoutpageextrassection h2{
+    color: black;
+    font-size: 1.8rem;
+}
+.rightcheckoutpageextrasbox{
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+.middlecheckoutpageextrasboxsection h2{
+    color: var(--blue);
+}
+.middlecheckoutpageextrasboxsection p{
+    font-size: 1.4rem;
+}
+.rightcheckoutpageextrasboxsection p{
+    font-size: 1.4rem;
+}
+.leftcheckoutpageextrasboxsection img{
+    width: 50px;
+}
+.middlecheckoutpageextrasboxsection{
+    width: 60%;
+    text-align: start;
+}
+.rightcheckoutpageboxcontent .checkoutactions{
+    margin-top: 1.5rem;
+    text-align: end;
+}
+.rightcheckoutpageboxcontent .checkoutactions button{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: rgb(207, 35, 35);
+}
+.checkoutpagecontent button{
+    margin-top: 3rem;
+    padding: 1.3rem 2rem;
+    font-size: 1.6rem;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
 /* =============================================
 =======================Media queries for Product page============
 =================================================== */
@@ -487,6 +663,18 @@ html {
     .rightcontactpagesection{
         width: 100%;
     }
+    .productpagecontent{
+        display: block;
+    }
+    .leftproductpagesection{
+        width: 95%;
+    }
+    .rightproductpagesection{
+        width: 95%;
+    }
+    .rightproductpagesection img{
+        width: 500px;
+    }
 }
 @media screen and (max-width:862px){
     .contactuscontent{
@@ -494,6 +682,13 @@ html {
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+    .skipbagcontainerbody{
+        width: 100%;
+        text-align: center;
+    }
+    .skipbagbox{
+        width: 500px;
     }
 }
 @media screen and (max-width:500px){
@@ -524,6 +719,22 @@ html {
     .contactuscontent{
         padding: 0;
         margin-top: 4rem;
+    }
+    .leftproductpagesection{
+        text-align: center;
+    }
+    .leftproductpagesection h1{
+        font-size: 3rem;
+    }
+    .rightproductpagesection{
+        margin-top: 2rem;
+    }
+    .rightproductpagesection img{
+        width: 100%;
+    }
+    .skipbagbox{
+        width: fit-content;
+        height: fit-content;
     }
 }
 @media screen and (max-width:370px){

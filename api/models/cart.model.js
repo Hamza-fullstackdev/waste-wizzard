@@ -22,8 +22,7 @@ const cartModel= new mongoose.Schema({
         required:true
     },
     secondAddress:{
-        type:String,
-        required:true
+        type:String
     },
     city:{
         type:String,
@@ -49,12 +48,21 @@ const cartModel= new mongoose.Schema({
         type:String,
         required:true
     },
-    quantity:{
-        type:Number,
-        required:true
+    totalPrice:{
+        type:Number
     },
     products:{
         type:Array,
+        required:true
+    },
+    extras:{
+        type:Array
+    },
+    userId:{
+        type:String,
+    },
+    status:{
+        type:String,
         required:true
     }
 },{timestamps:true})

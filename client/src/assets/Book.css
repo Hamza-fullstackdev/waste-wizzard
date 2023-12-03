@@ -144,6 +144,24 @@ html {
   width: fit-content;
   border-radius: 50px;
 }
+.bookingcontainerbox{
+  margin-top: 1rem;
+  background-color: white;
+  padding: .8rem;
+  border-radius: 5px;
+}
+.leftbookingcontainerboxsection img{
+  width: 50px;
+}
+.middlebookingcontainerboxsection{
+  width: 70%;
+}
+.middlebookingcontainerboxsection p{
+  font-size: 1.4rem;
+}
+.rightbookingcontainerboxsection p{
+  font-size: 1.4rem;
+}
 .rightbookingdetailscontent{
   width: 50%;
 }
@@ -193,7 +211,67 @@ html {
   border-radius: 50px;
   cursor: pointer;
 }
+/* MyCalendar.css */
 
+
+/* MyCalendar.css */
+
+.react-calendar {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.4rem;
+  padding: 10;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background-color: var(--cyan);
+  color: white;
+}
+
+.react-calendar__tile--disabled {
+  background-color: var(--cyan);
+  color: white;
+  padding: 10;
+  border-radius: 10px;
+}
+.react-calendar__tile--now {
+  background-color: var(--pink);
+  color: white;
+  border-radius: 10px;
+}
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.react-calendar__navigation button {
+  background-color: var(--pink);
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border-radius: 10px;
+}
+.custom-date {
+  padding: 3px;
+  margin-top: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.custom-date:hover {
+  background-color: var(--cyan);
+  color: white;
+}
 
 .collectingheading{
   margin-top: 3rem;
@@ -235,11 +313,13 @@ html {
   border-radius: 2px;
   padding: 1rem;
 }
+
+
+
 .rightcollectingdetailssection{
-  width: 45%;
-  padding: 2rem;
+  max-width: 600px;
   background-color: white;
-  position: relative;
+  height: fit-content;
 }
 .rightcollectingdetailssection h2{
   font-size: 2.1rem;
@@ -258,9 +338,6 @@ html {
 .extrasfooter{
   width: 100%;
   background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 .extrasfooter h2{
   color: white;
@@ -278,8 +355,49 @@ html {
   font-size: 1.6rem;
   border-radius: 50px;
 }
-
-
+.rightextrascontainer{
+  width: 50%;
+  background-color: rgb(219, 172, 16);
+  padding: 2rem;
+}
+.leftextrascontainer{
+  width: 50%;
+  padding: 1rem;
+}
+.leftextrascontainerbox{
+  margin-top: .5rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.leftextracontainerboxcontent{
+  width: 50px;
+}
+.leftextracontainerboxcontent img{
+  width: 40px;
+}
+.middleextracontainerboxcontent{
+  width: 50%;
+}
+.middleextracontainerboxcontent h2{
+  font-size: 1.4rem;
+}
+.middleextracontainerboxcontent h3{
+  font-weight: 700;
+}
+.righttextracontainerboxcontent{
+  width: 30%;
+}
+.righttextracontainerboxcontent button{
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.righttextracontainerboxcontent span{
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
 /* =============================================
 =======================Media queries for (Booking Page)============
 =================================================== */
@@ -325,6 +443,19 @@ html {
   }
   .rightcollectingdetailssection{
     width: 90%;
+  }
+  .extrascontainer{
+    display: block;
+  }
+  .leftextrascontainer{
+    width: 100%;
+    padding: 0;
+  }
+  .leftextrascontainerbox{
+    width: 95%;
+  }
+  .rightextrascontainer{
+    width: 100%;
   }
 }
 @media screen and (max-width:519px){

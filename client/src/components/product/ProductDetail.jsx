@@ -45,7 +45,7 @@ const ProductDetail = () => {
                                 <p>{data.description}</p>
                             </div>
                             <div className="productpagedetailboxfooter center">
-                                <button><Link to='/product-detail' state={{data:data,quantity:1}} style={{color:'white'}}>Book now</Link></button>
+                                <button><Link to='/book/product/product-detail' state={[{...data,totalPrice:data.price,quantity:1}]} style={{color:'white'}}>Book now</Link></button>
                             </div>
                         </div>
                            

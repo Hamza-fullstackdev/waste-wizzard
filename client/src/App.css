@@ -891,9 +891,59 @@ html {
   background-color: var(--magenta);
   margin-top: 1rem;
 }
-
-
-
+.profilepagecartsection{
+  margin-top: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+.profilepagecartsection h2{
+  color: white;
+  font-size: 2rem;
+}
+.profilepagecartbox{
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  align-items: normal;
+  padding: 1rem 0;
+  position: relative;
+}
+.profilepagecartbox span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  background-color: var(--pink);
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+.leftprofilepagecartsection{
+  width: fit-content;
+  padding: .5rem;
+  width: 30%;
+}
+.leftprofilepagecartsection img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.rightprofilepagecartsection{
+  width: 70%;
+  padding-right: 1rem;
+}
+.rightprofilepagecartsection h2{
+  font-size: 2rem;
+  color: var(--blue);
+}
+.rightprofilepagecartsection address{
+  font-size: 1.4rem;
+  margin-top: .3rem;
+}
+.rightprofilepagecartsection p{
+  font-size: 1.4rem;
+  margin-top: .3rem;
+}
 
 
 /* =============================================
@@ -941,7 +991,7 @@ html {
     width: 70%;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 960px) {
   .hamberger-menu i{
     display: block;
   }
@@ -1243,5 +1293,11 @@ html {
   }
   .aboutdata{
     margin-top: 2rem;
+  }
+  .profilebox{
+    width: 100%;
+  }
+  .profilecontent input{
+    width: 80%;
   }
 }

@@ -19,7 +19,12 @@ export const signup = async (req, res, next) => {
       message: "User created Successfully",
     });
   } catch (error) {
-    next(error);
+    if(error.keyValue.email){
+      next(errorHandler(400,"User with this email already exist"))
+    }
+    else{
+      next(error)
+    }
   }
 };
 

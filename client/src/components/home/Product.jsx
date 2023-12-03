@@ -18,7 +18,7 @@ const Product = () => {
             <div className="productcontainer flex">
                 <div className="productcard">
                     <span>Sameday collection</span>
-                    <Link to={'/rubbish-clearance'}>
+                    <Link to={'/book/rubbish-clearance'}>
                         <div className="productimg">
                             <img src="./images/truck.webp" alt="delivery"/>
                         </div>
@@ -41,7 +41,7 @@ const Product = () => {
                 </div>
                 <div className="productcard">
                     <span>Available in 3 sizes</span>
-                    <Link to={'/skip-bags'}>
+                    <Link to={'/book/skip-bags'}>
                         <div className="productimg">
                             <img src="./images/Skip-bag.webp" alt="delivery"/>
                         </div>
@@ -53,7 +53,7 @@ const Product = () => {
                 </div>
                 <div className="productcard">
                     <span>Sameday collection</span>
-                    <a href="#">
+                    <Link to={'/book/sofa-removal'}>
                         <div className="productimg">
                             <img src="./images/Reclining-corner-sofa.webp" alt="delivery"/>
                         </div>
@@ -61,7 +61,7 @@ const Product = () => {
                             <h2>Sofa Removal</h2>
                             <p>from £69.99</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="productcard">
                     <span>Next-day collection</span>

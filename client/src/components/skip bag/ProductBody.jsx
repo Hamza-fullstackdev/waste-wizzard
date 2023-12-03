@@ -6,6 +6,7 @@ const ProductBody = () => {
     const [getData, setGetData] = useState({})
     const [productQuantity, setProductQuantity] = useState(0)
     const [loading,setLoading]=useState(false)
+
     useEffect(() => {
         setLoading(true)
         const fetchProducts = async () => {
@@ -80,7 +81,7 @@ const ProductBody = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <Link to={'/product-detail'} state={{data:product,quantity:productQuantity[product._id]}}><button>Book Now</button></Link>
+                                        <Link to={'/book/product/product-detail'} state={[{...product,totalPrice:product.price * productQuantity[product._id],quantity:productQuantity[product._id]}]}><button>Book Now</button></Link>
                                     </div>
                                 </div>
                             ) :
