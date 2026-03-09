@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import cookieParser from "cookie-parser";
 import path from 'path';
+import helmet from "hetmet";
 
 import authRoute from "./routes/auth.route.js";
 import userRoute from './routes/user.route.js';
@@ -27,6 +28,7 @@ app.use(cors({
 }));
 app.use(express.json())
 app.use(cookieParser())
+app.use(helmet())
 
 app.use("/api/route",authRoute);
 app.use("/api/user",userRoute);
